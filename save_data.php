@@ -1,8 +1,7 @@
 <?php
-// Ganti dengan kredensial database Anda (default XAMPP)
 $servername = "localhost";
 $username = "root";
-$password = ""; // Kosong jika default XAMPP
+$password = ""; 
 $dbname = "iot_water_control";
 
 // Periksa apakah data POST diterima
@@ -36,4 +35,5 @@ if (isset($_POST["event_type"]) && isset($_POST["sensor_value"])) {
 } else {
     echo "Tidak ada data yang diterima dari ESP32.";
 }
+
 ?>
